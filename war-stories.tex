@@ -6,27 +6,27 @@ some lessons each reveals.
 
 \subsection{Revealing an AWS key}
 
-We ask Students to use Git to manage their projects.  While many
-have prior experience with Git, the course
-frequently expands their understanding and usage of Git; most move
-from a single branch to using multiple branches, and from pushing
+We ask students to use Git to manage their projects.  While many
+have prior experience with Git, most expand
+their understanding and usage, moving
+from a single branch to multiple branches, and from pushing
 to sending pull requests.  Because many students had learned Git
 informally and because the Internet is full of mediocre advice,
 some students employ poor Git practices.  For example, there is a
 group of students who frequently write ``\texttt{git add .; git
 commit}.\footnote{That is, add any new or changed files in or below
 the current directory and commit those files to the repository.}''
-As one might expect, that leads to some inappropriate materials in
-their public repositories.
+As one might expect, that can lead to inappropriate materials in
+public repositories.
 
-We discovered one such example indirectly.  The instructor received
+We discovered one such case indirectly.  The instructor received
 a call from Amazon.com asking, ``Do you realize that \$5,000 has
 been charged to your AWS account in the past two days?''\footnote{During
 development, the instructor had allowed the students to set up an
 AWS account and to use his credit card.}  It appears that students
-joining a project in the second semester had ignored their predecessor's
-instructions and had put the AWS key in a public repository.  Since
-there some applications regularly scrape public repositories for such
+joining a project in the second semester had ignored their predecessors'
+instructions and put the AWS key in a public repository.  Since
+repositories are regularly scraped for such
 keys, it took little time for the now-public key to be found and
 used.\footnote{Fortunately, an Amazon employee noted that Amazon
 had also found the key in the repository, was sympathetic, and
@@ -34,29 +34,29 @@ waived the charge.}
 
 That experience proved instructive not just for that semester's
 students but also for subsequent students.  Students learned not
-only that there are consequences when the inappropriately reveal
+only that there are consequences when they inappropriately reveal
 information, but also that such experiences are not uncommon.  The
 more important lessons were about the technical and nontechnical
 issues involved in keeping some information private in a project
 that is primarily public.  Students needed to figure out technical
 issues, such as how to update the \texttt{.gitignore} file to ensure
-that the key would not be included, even by someone new to the
+that the key would not be included even by someone new to the
 project who follows poor Git practices, how to configure the system to read
 that key from an environment variable, and how to set environment
 variables in a platform like Heroku.  But they also needed to decide
 on practices.  For example, how do you share a private key among
-group members without accidentally revealing it to others?  While
+team members without accidentally revealing it to others?  While
 there are some common practices, and any organization they joined
 would have standards, we saw value in letting students think through
-the issue on their own and compare alternative strategies.
+the issue and compare strategies.
 
 \subsection{Revealing personal information}
 
-Lazy Git practice has also created other problems.  One group, while
+Lazy Git practice has created other problems.  One group, while
 developing an online directory for a local retirement community,
 accidentally included photographs of all the residents in their
 public GitHub repository.  In addition to the obvious privacy issues,
-adding a large number of photographs also significantly increases
+adding a large number of photographs significantly increases
 the download time for cloning the repository.
 
 Fortunately, we caught this problem before any personal information
@@ -67,17 +67,16 @@ for them to remove the photographs from the repository's history.
 
 This experience highlighted an issue that students regularly struggle
 with: The overall structure of the project should be public so that
-others can adapt or adopt it, but some portions need to be custom
+others can adapt or adopt it, but some portions need to be customized
 for the client.  How do you appropriately separate the two?
-Admittedly, this remains an issue that students struggle with; too
+Admittedly, this remains an issue that students struggle with. Too
 often, they consider the two aspects of the project together, rather
-than separately.  We continue to draw on the example in helping them
+than separately.  We continue to draw on this example in helping them
 reflect on this design issue.
 
 \subsection{Uncooperative IT departments}
 
-Unfortunately, the SMS service was not the only instance in which
-students ended the project with a sense of disappointment.  We have
+We have
 had at least two instances in which students finished a project for
 a larger non-profit with its own IT department and then discovered
 that the IT staff was less uncooperative than we expected.  In one
@@ -86,13 +85,13 @@ the client's IT department.  They thanked us, but did not appear
 to have the time or enthusiasm to install it.  In the second case,
 the IT staff agreed to provide a server for the students to install
 software, but it took two-months of conversation to open port 80 on
-that server.  At that point, students students were left with insufficient 
-time to complete the project release.
+that server.  At that point, students students were left without enough
+time to complete a release.
 
 In both cases, we were able to help students focus on positive
 outcomes.  While the projects did not get released, they had some
 confidence that they would benefit others by releasing their software
-with an open license And, in both cases, it was clear that their
+with an open license. In both cases, it was clear that their
 regular client meetings had evolved partners' thinking about their
 projects and processes.
 
@@ -106,7 +105,7 @@ serves both the students and the partner organizations well.
 Through the years, management of our partner organizations has
 sometimes changed.  Often, the new manager has a very different
 view of what the project should do.  In one case, the initial project
-request was for a group text-messaging system with a Web interface.
+request was for a group text messaging system with a Web interface.
 We'd been surprised by the original project requirements since
 free software with similar functionality exists.  However, the
 client felt that they had particular enough requirements that a custom
@@ -123,8 +122,7 @@ new manager decided that free software did a good enough job.
 
 This situation was particularly challenging to help students through.
 Since the organization's personnel changed, we could not emphasize
-the broader benefits, ``Even though they're not using your software,
-you've helped the organization grow in understanding.'' Because
+the broader benefits to organizational understanding.  Because
 similar free software existed, students did not think that there
 would be a benefit to releasing their work as free-and-open-source
 software.  In the end, we focused on what the students had learned
