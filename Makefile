@@ -1,4 +1,4 @@
-default: anonymous.pdf csc32x.pdf
+default: ert360.pdf
 
 %.pdf: %.tex %.bib *.tex
 	pdflatex $*
