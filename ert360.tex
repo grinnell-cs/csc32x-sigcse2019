@@ -1,0 +1,56 @@
+\documentclass[sigconf]{acmart}
+
+% Material from https://www.scomminc.com/pp/acmsig/sigcse.htm#L
+\copyrightyear{2019} 
+\acmYear{2019} 
+\setcopyright{acmcopyright}
+\acmConference[SIGCSE '19]{Proceedings of the 50th ACM Technical Symposium on Computer Science Education}{February 27-March 2, 2019}{Minneapolis, MN, USA}
+\acmBooktitle{Proceedings of the 50th ACM Technical Symposium on Computer Science Education (SIGCSE '19), February 27-March 2, 2019, Minneapolis, MN, USA}
+\acmPrice{15.00}
+\acmDOI{10.1145/3287324.3287508}
+\acmISBN{978-1-4503-5890-3/19/02}
+\settopmatter{printacmref=true}
+\fancyhead{}
+
+\begin{document}
+
+\title[Multi-semester, remotely mentored, community service projects]{Developing soft and technical skills through multi-semester, remotely mentored, community-service projects}
+
+\author{Janet Davis}
+\affiliation{Whitman College}
+\email{davisj@whitman.edu}
+
+\author{Samuel A. Rebelsky}
+\affiliation{Grinnell College}
+\email{rebelsky@grinnell.edu}
+
+% Material from the permissions letter
+%   From: rightsreview@acm.org
+%   Title: ACM Copyright Text, Bibstrip, and Form - ...
+%   Date: Nov 7, 2018 at 2:28 pm
+% Most of this does not work correclty, and so is commented out
+%\copyrightyear{2019} 
+%\setcopyright{acmcopyright} 
+%\conferenceinfo{SIGCSE '19,}{February 27-March 2, 2019, Minneapolis, MN, USA}
+%\isbn{978-1-4503-5890-3/19/02}\acmPrice{$15.00}
+%\doi{https://doi.org/10.1145/3287324.3287508}
+
+% The default list of authors is too long for headers}
+% \renewcommand{\shortauthors}{Author 1 \textit{et al.}}
+
+\input{abstract.tex}
+\input{ccsxml.tex}
+\input{keywords.tex}
+
+\maketitle
+
+\newcommand{\college}{Grinnell}
+
+\input{body.tex}
+
+\input{acknowledgements.tex}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{anonymous} 
+
+\end{document}
