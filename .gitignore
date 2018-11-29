@@ -249,3 +249,9 @@ comment.cut
 
 # .txt files (these are generally cruft and should be added manually
 *.txt
+
+# Sam works on a Mac
+.DS_Store
+
+# The .zip file that we generate for ACM
+*.zip
