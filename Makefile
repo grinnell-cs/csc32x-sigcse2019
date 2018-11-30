@@ -1,4 +1,4 @@
-default: ert360.pdf
+default: ert630.pdf
 
 %.pdf: %.tex bibliography.bib *.tex
 	pdflatex $*
@@ -17,13 +17,13 @@ ZIPFILES = \
 	ccsxml.tex \
 	context.tex \
 	course-design.tex \
-	ert360.tex \
+	ert630.tex \
 	introduction.tex \
 	keywords.tex \
 	outcomes.tex \
 	recommendations.tex \
 	war-stories.tex 
 
-ert360.zip: $(ZIPFILES)
+ert630.zip: $(ZIPFILES)
 	rm -f $@
 	zip $@ $(ZIPFILES)
